@@ -2,13 +2,13 @@
   "name": "node-xmpp-jid",
   "version": "1.0.2",
   "description": "XMPP identifiers (JID) for JavaScript",
-  "main": "index.js",
+  "main": "lib/JID.js",
   "scripts": {
     "preversion": "npm test",
     "lint": "./node_modules/.bin/eslint --fix .",
     "unit": "./node_modules/.bin/mocha --compilers js:babel/register test/",
-    "browserify": "./node_modules/.bin/browserify -t babelify -s JID index -o JID.js",
-    "test": "npm run unit && npm run lint && npm run browserify"
+    "compile": "./node_modules/.bin/babel --optional runtime -sd lib/ src/",
+    "test": "npm run unit && npm run lint && npm run compile"
   },
   "repository": "github:node-xmpp/JID",
   "keywords": [

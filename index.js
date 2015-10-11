@@ -1,6 +1,4 @@
-'use strict'
+const JID = require('./lib/JID');
 
-var JID = require('./lib/JID')
-
-module.exports = JID
-module.exports.JID = JID
+module.exports = JID;
+module.exports.JID = JID;

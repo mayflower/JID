@@ -1,2 +1,5 @@
 env:
   mocha: true
+
+rules:
+  newline-after-var: 0

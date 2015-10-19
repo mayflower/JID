@@ -17,7 +17,10 @@ class JID {
         if (a && !b && !c) {
             if (typeof a === 'string') {
                 this.parseJID(a);
-            } else if (a instanceof JID) {
+            } else if (
+                a instanceof JID ||
+                a.hasOwnProperty('_local') && a.hasOwnProperty('_domain') && a.hasOwnProperty('resource')
+            ) {
                 Object.assign(this, a);
             } else {
                 throw new Error('Argument error');

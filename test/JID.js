@@ -1,5 +1,5 @@
 const assert = require('assert');
-const JID = require('..').JID;
+const JID = require('../src/JID');
 
 describe('JID', () => {
     describe('parsing', () => {

@@ -1,4 +1,4 @@
-const JID = require('../index');
+const JID = require('../src/JID');
 const assert = require('chai').assert;
 
 // --------------------------------------------------------------------

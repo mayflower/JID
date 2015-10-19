@@ -1,8 +1,1 @@
-!.editorconfig
-!.eslintignore
-!.eslintrc
-!.gitignore
-!.npmignore
-!.travis.yml
-
-/JID.js
+node_modules

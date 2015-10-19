@@ -1,5 +1,6 @@
 {
   "optional": ["strict", "runtime"],
   "stage": 0,
-  "comments": false
+  "comments": false,
+  "sourceMaps": "inline"
 }
